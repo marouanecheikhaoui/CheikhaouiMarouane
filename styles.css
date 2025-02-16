@@ -1,0 +1,124 @@
+body{
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+header,main,footer{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px 
+/* hear the 15 px is the  exactly same 1 rem like the nav below  */
+    ;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+nav i {
+    font-size: 1.3rem;
+}
+
+main,section{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    gap:4rem;
+}
+
+.intro-header p {
+    padding-top: 4px;
+}
+
+.intro-description{
+    max-width: 500px;
+}
+
+.link-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-inline: 1rem 0;
+
+}
+
+.link-arrow {
+    color: var(--color-link);
+    transform: rotate(-45deg);
+}
+
+.color-div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.card-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.Projects-card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-links{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 0.5rem;
+}
+
+.tech-list{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 0.25rem 0;
+}
+
+
+.tech-list div{
+    padding: 0.1rem 0.5rem;
+    border-radius: var(--border-radius-small);
+
+
+}
+
+.tech-list p{
+    font-size: 0.8rem;
+}
+
+@media (min-width:640px) {
+    .Projects-card{
+        flex-direction: row;
+    }
+    .Projects-card .img-div{
+        max-width: 20%;
+    }
+    
+}
+
+
+
+
